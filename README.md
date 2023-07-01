@@ -13,6 +13,7 @@ While its frequency response is given by:
 H(w) = \sum_{j=0}^{N} b_k \times e^{-jwn}
 ```
 
+The parameters $b_k$ are camculated using the DFT (Discrete Fourier Transform) method.
 
 In order to test the time response of the filter you need to create the mex function in MATLAB using the command `mex -R2018a FIR_BP_Rectangular.c`. When calling the function you need to do it passing the parameters shown below:
 
